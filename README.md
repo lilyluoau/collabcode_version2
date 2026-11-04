@@ -37,5 +37,3 @@ npm run test:vscode
 - Room tokens, message limits, heartbeat cleanup, and safe text rendering in the panel.
 
 This is a single-server, in-memory demo. Publishing is explicit; it does not automatically merge simultaneous edits. Rejoin manually after disconnecting and save important drafts locally. Internet hosting would also need TLS and a durable storage/authentication design.
-
-Original projects: [CollabCode](https://github.com/Lily9814/CollabCode), [extension](https://github.com/sarahtoussaint/collab-ext), [website](https://github.com/sarahtoussaint/collabcode-web). Thanks to Sarah and Lorrie from the original team. v2 is a new implementation focused on the extension; the original marketing sites remain in those repositories.
