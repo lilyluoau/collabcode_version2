@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Run CollabCode v2",
+    "type": "extensionHost",
+    "request": "launch",
+    "args": ["--extensionDevelopmentPath=${workspaceFolder}/extension"],
+    "outFiles": ["${workspaceFolder}/extension/**/*.js"]
+  }]
+}

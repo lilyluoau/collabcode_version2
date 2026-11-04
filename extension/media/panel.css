@@ -1,0 +1,22 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { max-width: 780px; margin: 0 auto; padding: 24px; color: var(--vscode-foreground); font-family: var(--vscode-font-family); line-height: 1.5; }
+header { padding-bottom: 16px; border-bottom: 1px solid var(--vscode-panel-border); }
+.eyebrow { font-size: 10px; letter-spacing: 2px; color: var(--vscode-descriptionForeground); }
+h1 { font-weight: 600; font-size: 27px; margin: 8px 0; }
+h2 { font-size: 14px; margin-top: 0; }
+section { margin-top: 24px; }
+p { color: var(--vscode-descriptionForeground); }
+#status { border-left: 3px solid var(--vscode-focusBorder); padding: 8px 12px; background: var(--vscode-textBlockQuote-background); }
+input, textarea { width: 100%; padding: 10px; background: var(--vscode-input-background); color: var(--vscode-input-foreground); border: 1px solid var(--vscode-input-border, var(--vscode-panel-border)); border-radius: 4px; font: inherit; }
+textarea { resize: vertical; }
+button { background: var(--vscode-button-background); color: var(--vscode-button-foreground); border: 0; border-radius: 4px; padding: 8px 12px; cursor: pointer; font: inherit; }
+button:hover { background: var(--vscode-button-hoverBackground); }
+button.secondary { background: var(--vscode-button-secondaryBackground); color: var(--vscode-button-secondaryForeground); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.small { font-size: 11px; }
+#chat { list-style: none; padding: 0; max-height: 240px; overflow: auto; }
+#chat li { padding: 8px 0; border-bottom: 1px solid var(--vscode-panel-border); overflow-wrap: anywhere; white-space: pre-wrap; }
+#chat-form { display: flex; gap: 8px; }
+:focus-visible { outline: 2px solid var(--vscode-focusBorder); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src {{source}}; script-src 'nonce-{{nonce}}';">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{style}}"><title>CollabCode</title></head>
+<body>
+<header><p class="eyebrow">COLLABCODE / V2</p><h1>Build together.</h1><p id="room">Joining room…</p></header>
+<p id="status" role="status" aria-live="polite">Connecting…</p>
+<section aria-labelledby="people-heading"><h2 id="people-heading">In this room</h2><p id="people">Waiting for collaborators</p></section>
+<section aria-labelledby="code-heading"><h2 id="code-heading">Shared document</h2>
+<p>Edit the shared untitled document, then publish. Collaborators see your cursor on the same published version.</p>
+<div class="actions"><button id="publish">Publish document</button><button id="sync" class="secondary">Load latest</button></div>
+<p class="small">Load latest keeps a changed draft in a separate untitled editor. Save your work before leaving.</p></section>
+<section aria-labelledby="notes-heading"><h2 id="notes-heading">Shared notes <span id="notes-version"></span></h2>
+<label class="sr-only" for="notes">Shared notes draft</label><textarea id="notes" rows="6" maxlength="50000" placeholder="Ideas, decisions, next steps…"></textarea>
+<div class="actions"><button id="save-notes">Publish notes</button><button id="load-notes" class="secondary">Load latest notes</button></div>
+<details id="backup-section" hidden><summary>Previous notes draft</summary><textarea id="backup" rows="4" readonly aria-label="Previous notes draft"></textarea></details></section>
+<section aria-labelledby="chat-heading"><h2 id="chat-heading">Chat</h2><ol id="chat" aria-live="polite"></ol>
+<form id="chat-form"><label class="sr-only" for="message">Message</label><input id="message" maxlength="2000" placeholder="Send a message…" required><button>Send</button></form></section>
+<script nonce="{{nonce}}" src="{{script}}"></script></body></html>

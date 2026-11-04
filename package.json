@@ -1,0 +1,14 @@
+{
+  "name": "collabcode-version2",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A learning project for room-based collaboration in VS Code",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.js",
+    "test:vscode": "node test/run-vscode.js",
+    "check": "node --check server/index.js && node --check server/session.js && node --check extension/extension.js && node --check extension/media/panel.js"
+  },
+  "dependencies": { "ws": "^8.18.3" }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "collabcode-version2",
+  "displayName": "CollabCode v2",
+  "description": "Room-based code sharing, live cursors, chat and notes for small collaboration sessions.",
+  "version": "0.2.0",
+  "publisher": "lilyluoau",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "main": "./extension.js",
+  "capabilities": { "untrustedWorkspaces": { "supported": false } },
+  "contributes": {
+    "commands": [
+      { "command": "collabcode.join", "title": "CollabCode v2: Join Room" },
+      { "command": "collabcode.publish", "title": "CollabCode v2: Publish Shared Document" },
+      { "command": "collabcode.sync", "title": "CollabCode v2: Load Latest Shared Document" },
+      { "command": "collabcode.leave", "title": "CollabCode v2: Leave Room" }
+    ]
+  },
+  "dependencies": { "ws": "^8.18.3" }
+}
